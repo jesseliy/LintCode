@@ -1,0 +1,17 @@
+"""
+反转一个只有3位数的整数
+"""
+
+class Solution:
+    """
+    @param number: A 3-digit number.
+    @return: Reversed number.
+    """
+    def reverseInteger(self, number):
+        # write your code here
+        rev = 0
+        while True:
+            rev = rev*10 + number % 10
+            number = number // 10
+            if number == 0:
+                return rev

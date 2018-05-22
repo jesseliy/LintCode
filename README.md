@@ -1,2 +1,2 @@
 # LintCode
-Code for Qs in LintCode
+Python Code for Qs in LintCode

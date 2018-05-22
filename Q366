@@ -1,0 +1,20 @@
+#查找斐波纳契数列中第 N 个数。
+
+class Solution:
+    """
+    @param n: an integer
+    @return: an ineger f(n)
+    """
+    def fibonacci(self, n):
+        if n < 2:
+            return 0
+        if n == 2:
+            return 1
+        a = 0
+        b = 1
+        while n > 2:
+            test = a
+            a = b
+            b = test + b
+            n = n-1
+        return b
